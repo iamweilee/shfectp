@@ -1,4 +1,4 @@
-#ifndef N_MDUSER_H_
+﻿#ifndef N_MDUSER_H_
 #define N_MDUSER_H_
 
 #include "stdafx.h"

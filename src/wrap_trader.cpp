@@ -1,4 +1,4 @@
-#include <node.h>
+﻿#include <node.h>
 #include "wrap_trader.h"
 
 Persistent<Function> WrapTrader::constructor;

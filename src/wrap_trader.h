@@ -1,4 +1,4 @@
-#ifndef N_TRADER_H_
+ï»¿#ifndef N_TRADER_H_
 #define N_TRADER_H_
 
 #include "stdafx.h"
@@ -25,37 +25,37 @@ public:
 	WrapTrader(void);
 	~WrapTrader(void);
 
-	///Á¬½ÓÇ°ÖÃ»ú
+	///è¿æ¥å‰ç½®æœº
 	static Handle<Value> Connect(const Arguments& args);	
-	///×¢²áÊÂ¼ş
+	///æ³¨å†Œäº‹ä»¶
 	static Handle<Value> On(const Arguments& args);
-	///ÓÃ»§µÇÂ¼ÇëÇó
+	///ç”¨æˆ·ç™»å½•è¯·æ±‚
 	static Handle<Value> ReqUserLogin(const Arguments& args);
-	///µÇ³öÇëÇó 
+	///ç™»å‡ºè¯·æ±‚ 
 	static Handle<Value> ReqUserLogout(const Arguments& args);
-	///Í¶×ÊÕß½áËã½á¹ûÈ·ÈÏ
+	///æŠ•èµ„è€…ç»“ç®—ç»“æœç¡®è®¤
 	static Handle<Value> ReqSettlementInfoConfirm(const Arguments& args);
-	///ÇëÇó²éÑ¯ºÏÔ¼
+	///è¯·æ±‚æŸ¥è¯¢åˆçº¦
 	static Handle<Value> ReqQryInstrument(const Arguments& args);
-	///ÇëÇó²éÑ¯×Ê½ğÕË»§
+	///è¯·æ±‚æŸ¥è¯¢èµ„é‡‘è´¦æˆ·
 	static Handle<Value> ReqQryTradingAccount(const Arguments& args);
-	///ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²Ö
+	///è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“
 	static Handle<Value> ReqQryInvestorPosition(const Arguments& args);
-	///³Ö²ÖÃ÷Ï¸
+	///æŒä»“æ˜ç»†
 	static Handle<Value> ReqQryInvestorPositionDetail(const Arguments& args);
-	///±¨µ¥Â¼ÈëÇëÇó
+	///æŠ¥å•å½•å…¥è¯·æ±‚
 	static Handle<Value> ReqOrderInsert(const Arguments& args);
-	///±¨µ¥²Ù×÷ÇëÇó
+	///æŠ¥å•æ“ä½œè¯·æ±‚
 	static Handle<Value> ReqOrderAction(const Arguments& args);
-	///ÇëÇó²éÑ¯ºÏÔ¼±£Ö¤½ğÂÊ 
+	///è¯·æ±‚æŸ¥è¯¢åˆçº¦ä¿è¯é‡‘ç‡ 
 	static Handle<Value> ReqQryInstrumentMarginRate(const Arguments& args);
-	///ÇëÇó²éÑ¯ĞĞÇé 
+	///è¯·æ±‚æŸ¥è¯¢è¡Œæƒ… 
 	static Handle<Value> ReqQryDepthMarketData(const Arguments& args);
-	///ÇëÇó²éÑ¯Í¶×ÊÕß½áËã½á¹û 
+	///è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…ç»“ç®—ç»“æœ 
 	static Handle<Value> ReqQrySettlementInfo(const Arguments& args);
-	///É¾³ı½Ó¿Ú¶ÔÏó
+	///åˆ é™¤æ¥å£å¯¹è±¡
 	static Handle<Value> Disposed(const Arguments& args);
-	//¶ÔÏó³õÊ¼»¯
+	//å¯¹è±¡åˆå§‹åŒ–
 	static void Init(int args);
 	static Handle<Value> NewInstance(const Arguments& args);
     static Handle<Value> GetTradingDay(const Arguments& args);

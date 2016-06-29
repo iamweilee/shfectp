@@ -1,4 +1,4 @@
-#include <node.h>
+﻿#include <node.h>
 #include "wrap_mduser.h"
 
 Persistent<Function> WrapMdUser::constructor;
