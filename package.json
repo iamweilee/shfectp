@@ -1,5 +1,5 @@
 {
-  "name": "shifctp",
+  "name": "shfectp",
   "version": "0.0.0",
   "description": "Futures CTP API wraped by node.js",
   "main": "main.js",

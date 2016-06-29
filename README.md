@@ -1,11 +1,11 @@
-node-ctp
+shfectp
 ========
 
 高性能期货程序化交易框架
 
 ##Why?
 
-Shif发布的CTP接口是基于C++语言开发的，我们使用CTP开发交易策略软件时，一般也使用C++语言。
+shfe发布的CTP接口是基于C++语言开发的，我们使用CTP开发交易策略软件时，一般也使用C++语言。
 我本人觉得这样不是很方便，封装成Node.js模块，我考虑基于以下两点：
 
     1. 使用Javascript极大的方便了交易策略的编写。
@@ -18,7 +18,7 @@ Shif发布的CTP接口是基于C++语言开发的，我们使用CTP开发交易�
 
 ```javascript
 
-var ctp = require('bindings')('shifctp');
+var ctp = require('bindings')('shfectp');
 ctp.settings({log:true});
 var mduser = ctp.createMduser();
 mduser.on("connect",function(result){
@@ -68,7 +68,7 @@ mduser.connect('ctp url', undefined, function (result){
 ```javascript
 //confirm
 
-ctp = require('bindings')('shifctp');
+ctp = require('bindings')('shfectp');
 ctp.settings({ log: true});
 var trader = ctp.createTrader();
 
@@ -152,9 +152,9 @@ trader.on('rspUserLogin',function(requestId, isLast, field, info){
 
 ##运行环境
 
-我分别给出了Linux和Windows平台下的工程，由于Shif发布接口文件平台的缘故，Linux版本的运行
+我分别给出了Linux和Windows平台下的工程，由于shfe发布接口文件平台的缘故，Linux版本的运行
 在Node.js x64下，Windows运行在Node.js x86下。注意下载不同版本的Node.js,下载地址：[Download Node.js](http://www.nodejs.org/download/).
-相应的Shif发布的Linux平台下CTP包选用x64的，而Windows平台的选用x86的。下载地址：[Download tradeapi](http://www.sfit.com.cn/5_2_DocumentDown.htm)
+相应的shfe发布的Linux平台下CTP包选用x64的，而Windows平台的选用x86的。下载地址：[Download tradeapi](http://www.sfit.com.cn/5_2_DocumentDown.htm)
 
     linux:centos 6.4 x64;
     gcc:v4.4.7 20120313;
@@ -180,8 +180,8 @@ trader.on('rspUserLogin',function(requestId, isLast, field, info){
 ##API介绍
  
 ```javascript
-//加载shifctp模块
-var ctp = require('bindings')('shifctp');
+//加载shfectp模块
+var ctp = require('bindings')('shfectp');
 //设置日志开关
 ctp.settings({log:true});
 //初始化Mduser对象

@@ -27,4 +27,7 @@
 *.out
 *.app
 
-.node_modules
+node_modules
+.project
+npm-debug.log
+.vscode
